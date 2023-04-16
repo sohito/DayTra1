@@ -14,7 +14,7 @@ header {
 
 h1 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 28px;
 }
 
 .menu {
@@ -152,4 +152,41 @@ footer {
 
 small {
     font-size: 10px;
+}
+
+/* レスポンシブ */
+@media(min-width:700px) {
+    header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        margin: 0;
+        align-items: center;
+    }
+
+    .hero div {
+        display: flex;
+        gap: 32px;
+    }
+
+    .hero img {
+        width: 100%;
+        display: block;
+    }
+
+    .container {
+        max-width: 800px;
+    }
+
+    .content {
+        display: flex;
+        gap: 16px;
+    }
+
+    .contact {
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
